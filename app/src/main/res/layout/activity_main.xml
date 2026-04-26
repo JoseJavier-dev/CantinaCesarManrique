@@ -1,0 +1,73 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Barra superior: puntos y carrito -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvPuntos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tus puntos: 0"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/btnCarrito"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/baseline_shopping_cart_24"
+        android:contentDescription="Carrito"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"/>
+    </LinearLayout>
+
+    <!-- Botones grandes para navegar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp"
+        android:spacing="16dp">
+
+        <Button
+            android:id="@+id/btnMenu"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_estilo"
+            android:text="Ir al Menú"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnOfertas"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_estilo"
+            android:text="Ir a Ofertas"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Información sobre puntos -->
+    <TextView
+        android:id="@+id/tvInfoPuntos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Con tus compras en la app ganas puntos a razón de 1 punto por cada 10 céntimos, que podrás gastar en comida gratis o rebajada."
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:paddingTop="8dp"/>
+</LinearLayout>
